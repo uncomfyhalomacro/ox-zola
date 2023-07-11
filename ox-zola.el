@@ -975,6 +975,10 @@ and rewrite link paths to make blogging more seamless."
   (interactive)
   (ox-zola--sandwiching #'org-hugo-export-wim-to-md))
 
+(defun ox-zola-export-all-wim-to-md ()
+  (interactive)
+  (ox-zola--sandwiching #'org-hugo-export-all-wim-to-md))
+
 (defun ox-zola-export-to-md ()
   "Export current buffer to a Zola-compatible Markdown file."
   (interactive)
